@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CoDZeLLa - Expert FiveM Developer specializing in high-performance QBCore server architecture and script optimization.">
+    <meta name="keywords" content="FiveM, Developer, QBCore, Optimization, Server Build, CoDZeLLa">
+    <title>CoDZeLLa FiveMDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Michroma&family=Outfit:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Critical inline styles to prevent FOUC */
+        body {
+            background-color: #0d0e12;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#home" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo">
+                </a>
+                <ul class="nav-links">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#scripts">Plugins</a></li>
+                    <li><a href="#ui">Servicing</a></li>
+                    <li><a href="https://tebex.io/" target="_blank">Tebex</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://fivemods.io/videos/scroller/Create%20your%20own%20GTA.webm" type="video/webm">
+        </video>
+        <div class="hero-overlay-grid"></div>
+        <div class="hero-overlay-gradient"></div>
+        <div class="hero-content">
+
+            <div class="hero-btn-container">
+                <a href="#store" class="btn-tactical hero-btn">
+                    Contact Sales
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-layout">
+
+        <!-- Sidebar / Info Area (Optional layout choice for forums style) -->
+        <aside class="sidebar">
+            <div class="widget" id="about-widget">
+                <h3><i data-lucide="user"></i> Loading...</h3>
+                <p>...</p>
+                <div class="stats-row"></div>
+            </div>
+
+            <div class="widget" style="margin-top: 2rem;" id="activity-widget">
+                <h3><i data-lucide="activity"></i> Loading...</h3>
+                <p>...</p>
+                <div class="server-list"></div>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-feed">
+
+            <!-- Featured Section -->
+
+            <section id="scripts" class="section-block">
+                <div class="section-header">
+                    <h2><i data-lucide="star"></i> Loading...</h2>
+                </div>
+                <div class="grid-3">
+                    <!-- Cards injected via script.js -->
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="section-block" id="services-section">
+                <div class="section-header">
+                    <h2><i data-lucide="layout"></i> Loading...</h2>
+                </div>
+                <div class="services-list" id="services-list">
+                    <!-- Services injected via script.js -->
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="ui">
+        <!-- Promo Ticker -->
+        <div class="ticker-wrap" id="promoTicker">
+            <div class="ticker"></div>
+        </div>
+        <div class="container footer-content">
+            <p>&copy; 2026 CoDZeLLa Development. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i data-lucide="github"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+                <a href="#"><i data-lucide="message-circle"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal / Dialog -->
+
+    <div id="modal-overlay" class="ox-dialog-overlay">
+        <div class="ox-dialog-container">
+            <div class="ox-dialog-header">
+                <h3 id="modal-title" class="ox-dialog-title">Confirmation</h3>
+            </div>
+            <div class="ox-dialog-body">
+                <p id="modal-info" class="ox-dialog-text">
+                    Are you sure you want to proceed?
+                </p>
+            </div>
+            <div class="ox-dialog-footer">
+                <button class="ox-btn ox-btn-secondary modal-cancel">Cancel</button>
+                <button class="ox-btn ox-btn-primary modal-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notif-container" class="notif-container"></div>
+
+    <script src="config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
